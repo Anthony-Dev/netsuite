@@ -28,6 +28,8 @@ module NetSuite
       }.update(params))
       puts params.inspect 
       puts soap_header.inspect
+      puts credentials.inspect
+      puts client.inspect
       cache_wsdl(client)
       return client
     end
