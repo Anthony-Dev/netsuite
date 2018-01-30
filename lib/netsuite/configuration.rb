@@ -26,6 +26,8 @@ module NetSuite
         log_level: log_level,
         log: !silent, # turn off logging entirely if configured
       }.update(params))
+      puts params.inspect 
+      puts soap_header.inspect
       cache_wsdl(client)
       return client
     end
